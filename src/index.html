@@ -8,19 +8,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hello, my phone</h1>
-    <form action="none" id="form">
-      <input
-        type="text"
-        id="input"
-        value="Some Message"
-        autofocus
-        autocomplete="off"
-        style="width: 300px"
-      />
-      <button>Run App</button>
-    </form>
-    <pre id="result">Result will be here</pre>
+    <header class="header">
+      <h1>Write message from an old phone</h1>
+      <form action="none" id="form">
+        <input
+          type="text"
+          id="input"
+          placeholder="Type your message here..."
+          autofocus
+          autocomplete="off"
+          style="width: 300px"
+        />
+        <button>Run App</button>
+      </form>
+    </header>
+    <main>
+      <div class="phone">
+        <div class="phone-screen-container">
+          <div class="phone-logo">NOKIA</div>
+          <div class="phone-screen">
+            <div class="phone-screen-result" id="result">
+              Result will be here
+            </div>
+            <div class="phone-screen-wallpaper">
+              <img src="assets/wallpaper.jpg" />
+            </div>
+          </div>
+        </div>
+        <div class="phone-buttons">
+          <button id="phone-button-key-1">1<span>.,?!</span></button>
+          <button id="phone-button-key-2">2<span>abc</span></button>
+          <button id="phone-button-key-3">3<span>def</span></button>
+          <button id="phone-button-key-4">4<span>ghi</span></button>
+          <button id="phone-button-key-5">5<span>jkl</span></button>
+          <button id="phone-button-key-6">6<span>mno</span></button>
+          <button id="phone-button-key-7">7<span>pqrs</span></button>
+          <button id="phone-button-key-8">8<span>tuv</span></button>
+          <button id="phone-button-key-9">9<span>wxyz</span></button>
+          <button id="phone-button-key-*">*<span>'-+=</span></button>
+          <button id="phone-button-key-0">0<span>_</span></button>
+          <button id="phone-button-key-#">#<span>⇧</span></button>
+        </div>
+      </div>
+    </main>
     <script type="module" src="index.js"></script>
   </body>
 </html>
